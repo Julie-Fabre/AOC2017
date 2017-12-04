@@ -1,5 +1,0 @@
-is_passphrase <- function(x) length(x) == length(unique(x))
-INPUT = readLines("./INPUT_txt.txt")
-INPUT = strsplit(INPUT, "[\n ]+")
-this_works = map_lgl(INPUT, is_passphrase)
-length(this_works[this_works==TRUE])
